@@ -1,0 +1,15 @@
+.app-header {
+  background: linear-gradient(to right, #ffffff27, #33333327);
+  grid-column: span 2 / 4;
+  &:hover {
+    color: lightseagreen;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-header {
+    background: transparent;
+    display: none;
+  }
+}
