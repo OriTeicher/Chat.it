@@ -1,0 +1,23 @@
+.app-container {
+  grid-template-columns: 240px 1fr 240px;
+  grid-template-rows: 60px 1fr 250px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    .chat-index {
+      height: 100%;
+    }
+    .chat-list {
+      padding-inline: 15px;
+    }
+  }
+  .chat-container {
+    width: 100%;
+    height: 100%;
+  }
+}

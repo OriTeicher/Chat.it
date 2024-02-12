@@ -1,0 +1,33 @@
+nav {
+  padding-inline: 10px;
+  padding-block: 10px;
+  background: #ffffff27;
+  width: fit-content;
+  display: flex;
+  justify-content: space-evenly;
+  svg {
+    cursor: pointer;
+    transition: scale 0.2s ease, padding 0.2s ease;
+    &:hover {
+      scale: 1.05;
+      color: lightseagreen;
+    }
+  }
+}
+
+.selected {
+  svg {
+    padding: 5px;
+  }
+  margin: 0px;
+
+  color: lightseagreen;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.right-menu {
+  grid-column: 3;
+  grid-row: span 2 / 4;
+  background: linear-gradient(to top, #ffffff27, #33333327);
+}
