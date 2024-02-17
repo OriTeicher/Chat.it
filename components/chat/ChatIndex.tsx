@@ -5,7 +5,6 @@ import { demoChat, loggedInUserDemo } from "@/services/demo.data.service"
 
 export default function ChatIndex() {
   return (
-    // <section className="chat-index">
     <section className="chat-index">
       <div className="chat-list">
         {demoChat.map((msg) => (

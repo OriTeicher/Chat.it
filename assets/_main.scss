@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap");
+
 @import "./layout";
+@import "./views/_ChatIndex.scss";
 @import "./cmps/_Navbar.scss";
 @import "./cmps/_AppHeader.scss";
-@import "./cmps/_ChatIndex.scss";
 @import "./cmps/_ContactsInbox.scss";
 @import "./cmps/_MsgPreview.scss";
+@import "./views/_LoginPage.scss";

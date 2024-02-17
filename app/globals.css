@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap');
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -20,11 +19,6 @@
 body {
   font-family: 'Nunito', sans-serif;
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to right, #333, rgba(0, 0, 0, 0.705));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+  background: linear-gradient(#333, #101010);
+  min-height: 100vh;
 }

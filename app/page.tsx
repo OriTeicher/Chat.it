@@ -6,12 +6,9 @@ import AppHeader from "@/components/navbar/AppHeader"
 import RightMenu from "@/components/navbar/RightMenu"
 export default function Home() {
   return (
-    <main className="app-container grid">
-      <Navbar />
-      <AppHeader />
-      <ContactsInbox />
-      <ChatIndex />
+    <>
       <RightMenu />
-    </main>
+      <ChatIndex />
+    </>
   )
 }

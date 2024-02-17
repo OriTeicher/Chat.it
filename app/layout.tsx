@@ -1,6 +1,11 @@
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
+import "@/assets/_main.scss"
+import Navbar from "@/components/navbar/Navbar"
+import AppHeader from "@/components/navbar/AppHeader"
+import RightMenu from "@/components/navbar/RightMenu"
+import ChatIndex from "@/components/chat/ChatIndex"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -16,7 +21,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <main className="app-container grid">
+          <Navbar />
+          <AppHeader />
+          {children}
+        </main>
+      </body>
     </html>
   )
 }

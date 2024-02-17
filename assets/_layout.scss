@@ -13,7 +13,12 @@
       height: 100%;
     }
     .chat-list {
-      padding-inline: 15px;
+      .msg-preview {
+        grid-template-columns: 9fr 1fr;
+      }
+      img {
+        display: none;
+      }
     }
   }
   .chat-container {

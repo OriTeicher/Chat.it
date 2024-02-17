@@ -1,13 +1,13 @@
 nav {
   padding-inline: 10px;
   padding-block: 10px;
+  gap: 10%;
   background: #ffffff27;
   width: fit-content;
   display: flex;
-  justify-content: space-evenly;
   svg {
     cursor: pointer;
-    transition: scale 0.2s ease, padding 0.2s ease;
+    transition: scale 0.1s ease, padding 0.1s ease;
     &:hover {
       scale: 1.05;
       color: lightseagreen;
