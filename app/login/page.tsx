@@ -11,25 +11,27 @@ export default function LoginPage() {
         <input
           type="text"
           placeholder="Username..."
-          className="text-center focus:outline-none text-slate-950"
+          className="ps focus:outline-none text-slate-950"
         />
         <input
           type="text"
           placeholder="Password..."
-          className="text-center focus:outline-none text-slate-950"
+          className="focus:outline-none text-slate-950"
         />
-        <input
-          type="text"
-          placeholder="Confirm Password..."
-          className="text-center focus:outline-none text-slate-950"
-        />
+        {!isLogin && (
+          <input
+            type="text"
+            placeholder="Confirm Password..."
+            className=" ps focus:outline-none text-slate-950"
+          />
+        )}
         <div className="bottom-form-content">
-          <p>
+          <p onClick={() => setIsLogin((prevIsLogin) => !prevIsLogin)}>
             {isLogin
               ? "Not a member in Chat.it? Sign-Up!"
               : "Already a member in Chat.it? Login!"}
           </p>
-          <button type="submit"> {isLogin ? "Login" : "Sign-Up"}</button>
+          <button type="submit"> {isLogin ? "Login" : "Sign-up"}</button>
         </div>
       </form>
     </section>

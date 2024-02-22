@@ -1,13 +1,12 @@
 .app-header {
   width: 100%;
-  background: linear-gradient(to right, #ffffff27, #33333327);
   grid-column: span 2 / 4;
   svg {
     &:hover {
       color: lightseagreen;
       cursor: pointer;
     }
-    margin-inline-end: 10px;
+    margin-inline-end: 30px;
   }
   h1 {
     display: none;

@@ -1,9 +1,16 @@
+// FONTS
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap");
 
+// APP SETUP
 @import "./layout";
-@import "./views/_ChatIndex.scss";
-@import "./cmps/_Navbar.scss";
-@import "./cmps/_AppHeader.scss";
-@import "./cmps/_ContactsInbox.scss";
-@import "./cmps/_MsgPreview.scss";
-@import "./views/_LoginPage.scss";
+@import "./variables";
+
+// CMPS
+@import "./views/_ChatIndex";
+@import "./cmps/_Navbar";
+@import "./cmps/_AppHeader";
+@import "./cmps/_ContactsInbox";
+@import "./cmps/_MsgPreview";
+@import "./views/_LoginPage";
+@import "./views/_Home";
+@import "./views/_About";

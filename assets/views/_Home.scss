@@ -1,0 +1,45 @@
+.homepage-container {
+  .home-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    align-content: center;
+    margin: auto;
+    padding: 50px 0px;
+    border-radius: 20px;
+    h1 {
+      font-weight: 800;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      span {
+        &:nth-child(1) {
+          letter-spacing: 2px;
+        }
+        &:nth-child(2) {
+          font-size: 30px;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
+
+.home-icons-container {
+  display: flex;
+  justify-content: center;
+  gap: 15%;
+  font-size: 3em;
+  margin-top: 3%;
+  box-sizing: border-box;
+  svg {
+    transition: scale 0.15s ease-in-out;
+    &:hover {
+      cursor: pointer;
+      scale: 1.3;
+      color: lightskyblue;
+    }
+  }
+}
