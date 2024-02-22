@@ -1,0 +1,18 @@
+.about-container {
+  background: linear-gradient(#333, $main-color, #101010);
+  grid-row: 2/4;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  h1 {
+    height: 100%;
+    font-size: 4em;
+    text-align: center;
+    position: absolute;
+    bottom: -30%;
+  }
+}

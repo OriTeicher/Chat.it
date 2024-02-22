@@ -1,9 +1,9 @@
 nav {
   padding-inline: 10px;
   padding-block: 10px;
-  gap: 10%;
-  background: #ffffff27;
   width: fit-content;
+  gap: 30px;
+  justify-content: center;
   display: flex;
   svg {
     cursor: pointer;
@@ -26,8 +26,13 @@ nav {
   background-color: #ffffff;
 }
 
+nav,
+.app-header {
+  background-color: $main-color;
+}
+
 .right-menu {
   grid-column: 3;
   grid-row: span 2 / 4;
-  background: linear-gradient(to top, #ffffff27, #33333327);
+  background: linear-gradient(to top, $main-color, #33333327);
 }
