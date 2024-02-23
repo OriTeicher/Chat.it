@@ -12,12 +12,12 @@ export interface ChatMsg {
 
 export interface HomeIconStyle {
   color: {
-    selected: "RGBA(135, 206, 250, 1)"
-    default: "#FFF"
+    selected: string
+    default: string
   }
   size: {
-    small: 20
-    medium: 30
-    large: 40
+    small: number
+    medium: number
+    large: number
   }
 }

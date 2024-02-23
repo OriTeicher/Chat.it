@@ -22,6 +22,28 @@
       }
     }
   }
+  .intro-details {
+    grid-row: 3;
+    width: 700px;
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: #defa 0px 30px 60px -12px inset, #333 0px 0px 6px -18px inset;
+    animation: floatUp 3.5s ease-in-out infinite;
+    transform-style: preserve-3d; /* Preserve the 3D effect */
+  }
+}
+@keyframes floatUp {
+  0% {
+    transform: translateY(-30px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
 }
 
 .home-icons-container {
@@ -31,6 +53,7 @@
   font-size: 3em;
   margin-top: 3%;
   box-sizing: border-box;
+
   svg {
     transition: scale 0.15s ease-in-out;
     &:hover {
@@ -61,6 +84,9 @@
   }
 }
 
+.loader {
+  justify-self: center;
+}
 .selected {
-  box-shadow: 1px 1px 1px black;
+  color: black;
 }

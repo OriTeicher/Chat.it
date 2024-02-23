@@ -1,6 +1,6 @@
+"use client"
 import React, { useState } from "react"
 import MsgPreview from "./MsgPreview"
-import { utilService } from "@/services/util.service"
 import { demoChat, loggedInUserDemo } from "@/services/demo.data.service"
 
 export default function ChatIndex() {
