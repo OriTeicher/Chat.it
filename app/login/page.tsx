@@ -7,7 +7,7 @@ export default function LoginPage() {
   return (
     <section className="login-container">
       <form className="login-form relative">
-        <h1 className="absolute top-0">Chat.it</h1>
+        <h1>Chat.it</h1>
         <input
           type="text"
           placeholder="Username..."

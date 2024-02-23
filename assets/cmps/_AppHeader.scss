@@ -1,19 +1,22 @@
 .app-header {
   width: 100%;
   grid-column: span 2 / 4;
+  padding-inline-end: 30px;
   svg {
     &:hover {
       color: lightseagreen;
       cursor: pointer;
     }
-    margin-inline-end: 30px;
   }
   h1 {
     display: none;
   }
 }
 @media (max-width: 768px) {
+  nav {
+    padding: 10px;
+  }
   .app-header {
-    display: none;
+    padding-inline-end: 10px;
   }
 }

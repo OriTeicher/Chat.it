@@ -5,7 +5,7 @@ export default function MsgPreview({ msg, clsName }: ChatPreviewProps) {
   return (
     <div className={`msg-preview ${clsName}  grid`}>
       <img src={msg.profileImgUrl}></img>
-      <p className="flex gap-2">
+      <p>
         <span className="msg-user">{msg.username}</span>
         <span
           className="msg-txt"

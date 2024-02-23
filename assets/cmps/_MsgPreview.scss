@@ -16,6 +16,10 @@
     outline: 1px black solid;
   }
   p {
+    width: 100%;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 100px 10fr;
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 1px black;
     font-weight: 700;
@@ -25,6 +29,18 @@
     justify-self: start;
     &:last-child {
       justify-self: end;
+    }
+    span {
+      &:nth-child(1) {
+        width: fit-content;
+        text-align: center;
+        justify-self: center;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+        border-radius: 10px;
+        max-height: 25px;
+        padding: 0px 5px;
+        outline: 1px solid rgba(255, 255, 255, 0.164);
+      }
     }
   }
 }

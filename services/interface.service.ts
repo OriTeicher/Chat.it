@@ -9,3 +9,15 @@ export interface ChatMsg {
   profileImgUrl: string
   sentAt: string
 }
+
+export interface HomeIconStyle {
+  color: {
+    selected: string
+    default: string
+  }
+  size: {
+    small: number
+    medium: number
+    large: number
+  }
+}
