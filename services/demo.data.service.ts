@@ -1,8 +1,7 @@
 import { utilService } from "./util.service"
 const demoImg1 =
   "https://applicants.mta.ac.il/wp-content/uploads/2019/11/yossi.png"
-const demoImg2 =
-  "https://www.mta.ac.il/SiteCollectionImages/ROMINAZI.jpg?RenditionId=16"
+const demoImg2 = "https://xsgames.co/randomusers/assets/avatars/female/1.jpg"
 
 export const demoChat = [
   {

@@ -4,10 +4,6 @@ import "./globals.css"
 import "@/assets/_main.scss"
 import Navbar from "@/components/navbar/Navbar"
 import AppHeader from "@/components/navbar/AppHeader"
-import RightMenu from "@/components/navbar/RightMenu"
-import ChatIndex from "@/components/chat/ChatIndex"
-import Home from "./chat.it/page"
-import Head from "next/head"
 
 const inter = Inter({ subsets: ["latin"] })
 

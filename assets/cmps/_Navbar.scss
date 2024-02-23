@@ -3,8 +3,8 @@ nav {
   padding-block: 10px;
   width: fit-content;
   gap: 30px;
-  justify-content: center;
   display: flex;
+  padding-inline-start: 30px;
   svg {
     cursor: pointer;
     transition: scale 0.1s ease, padding 0.1s ease;
