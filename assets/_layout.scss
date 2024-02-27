@@ -1,5 +1,5 @@
 .app-container {
-  grid-template-columns: 240px 1fr 240px;
+  grid-template-columns: 0.3fr 1fr;
   grid-template-rows: 60px 1fr 250px;
   height: 100vh;
   overflow: hidden;
@@ -13,17 +13,20 @@
     .chat-list {
       .left {
         img {
-          box-shadow: lightcoral 0px 3px 8px;
+          box-shadow: lightcoral 0px 3px 1px;
         }
       }
       .right {
         img {
-          box-shadow: lightskyblue 0px 3px 8px;
+          box-shadow: lightskyblue 0px 3px 1px;
         }
       }
       .msg-preview {
+        grid-template-columns: 30px 1fr;
+        align-items: start;
+        width: 100%;
         p {
-          display: flex;
+          display: block;
 
           &:last-child,
           span:nth-child(1) {

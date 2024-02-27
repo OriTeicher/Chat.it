@@ -1,6 +1,6 @@
 .about-container {
   background: linear-gradient(#333, $main-color, #101010);
-  grid-row: 2/4;
+  grid-row: 2/-1;
   justify-content: center;
   align-items: center;
   display: flex;

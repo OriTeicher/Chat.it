@@ -4,6 +4,7 @@ export interface ChatPreviewProps {
 }
 
 export interface ChatMsg {
+  id?: string
   txt: string
   username: string
   profileImgUrl: string
@@ -20,4 +21,12 @@ export interface HomeIconStyle {
     medium: number
     large: number
   }
+}
+
+export interface Contact {
+  id: string
+  name: string
+  profileImgUrl: string
+  lastMsg: string
+  seenAt: Date
 }

@@ -19,7 +19,8 @@
     width: 100%;
     display: grid;
     gap: 5px;
-    grid-template-columns: 100px 10fr;
+    word-break: keep-all;
+    grid-template-columns: 100px 1fr;
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 1px black;
     font-weight: 700;

@@ -9,20 +9,21 @@
   .chat-container {
     min-height: 200px;
 
+    gap: 10px;
+
     .chat-input {
       width: 100%;
       height: 100%;
-      padding: 15px 20px;
+      padding: 12px 10px;
       outline: none;
       font-size: 1.2rem;
-      background-color: rgba(0, 0, 0, 0.103);
+      background-color: #333;
+      filter: brightness(80%);
       resize: none;
       position: relative;
       &::placeholder {
         font-weight: 200;
         color: white;
-      }
-      &:focus {
       }
     }
     button {
@@ -37,6 +38,58 @@
       &:hover {
         background-color: $main-color;
       }
+    }
+  }
+}
+
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  li {
+    cursor: pointer;
+    padding: 10px;
+    filter: brightness(90%);
+    &:hover {
+      background-color: #333;
+      filter: brightness(100%);
+    }
+    border-bottom: 1px solid rgba(255, 255, 255, 0.171);
+    align-items: center;
+    max-height: 70px;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 0.15fr 1fr;
+    grid-template-rows: 1fr;
+    h1 {
+      font-size: 15px;
+      font-weight: 500;
+    }
+    img {
+      grid-column: 1;
+      grid-row: 1;
+      border-radius: 50%;
+      object-fit: cover;
+      width: 50px;
+    }
+    p {
+      position: relative;
+      span {
+        color: lightgrey;
+      }
+      span {
+        &:last-child {
+          position: absolute;
+          right: 0;
+        }
+      }
+      display: flex;
+      font-size: 13px;
+      width: 100%;
+      grid-row: 1;
+      grid-column: 3;
+      justify-content: space-between;
+      align-items: end;
     }
   }
 }

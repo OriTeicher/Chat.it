@@ -21,3 +21,4 @@ export default function HomeContent({ info }: HomeContentProps) {
     </>
   )
 }
+// This is the ugly blink

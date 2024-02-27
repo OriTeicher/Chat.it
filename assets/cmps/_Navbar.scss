@@ -4,7 +4,9 @@ nav {
   width: fit-content;
   gap: 30px;
   display: flex;
-  padding-inline-start: 30px;
+
+  filter: brightness(90%);
+
   svg {
     cursor: pointer;
     transition: scale 0.1s ease, padding 0.1s ease;
